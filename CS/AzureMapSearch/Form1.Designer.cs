@@ -100,9 +100,9 @@
             // 
             // textEdit1
             // 
-            textEdit1.Location = new Point(84, 12);
+            textEdit1.Location = new Point(78, 12);
             textEdit1.Name = "textEdit1";
-            textEdit1.Size = new Size(88, 22);
+            textEdit1.Size = new Size(94, 22);
             textEdit1.StyleController = layoutControl1;
             textEdit1.TabIndex = 4;
             // 
@@ -121,8 +121,8 @@
             layoutControlItem1.Location = new Point(0, 0);
             layoutControlItem1.Name = "layoutControlItem1";
             layoutControlItem1.Size = new Size(164, 26);
-            layoutControlItem1.Text = "Key Word:";
-            layoutControlItem1.TextSize = new Size(60, 16);
+            layoutControlItem1.Text = "Keyword:";
+            layoutControlItem1.TextSize = new Size(54, 16);
             // 
             // layoutControlItem2
             // 

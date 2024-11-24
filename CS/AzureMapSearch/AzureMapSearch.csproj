@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DevExpress.Win.Design" Version="24.2.1-alpha-24319" />
-    <PackageReference Include="DevExpress.Win.Map" Version="24.2.1-alpha-24319" />
+    <PackageReference Include="DevExpress.Win.Design" Version="24.2.2-beta-24326" />
+    <PackageReference Include="DevExpress.Win.Map" Version="24.2.2-beta-24326" />
   </ItemGroup>
 
 </Project>
