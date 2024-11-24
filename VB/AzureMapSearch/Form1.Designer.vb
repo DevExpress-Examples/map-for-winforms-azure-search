@@ -97,9 +97,9 @@ Namespace AzureMapSearch
             ' 
             ' textEdit1
             ' 
-            Me.textEdit1.Location = New Point(84, 12)
+            Me.textEdit1.Location = New Point(78, 12)
             Me.textEdit1.Name = "textEdit1"
-            Me.textEdit1.Size = New Size(88, 22)
+            Me.textEdit1.Size = New Size(94, 22)
             Me.textEdit1.StyleController = Me.layoutControl1
             Me.textEdit1.TabIndex = 4
             ' 
@@ -118,8 +118,8 @@ Namespace AzureMapSearch
             Me.layoutControlItem1.Location = New Point(0, 0)
             Me.layoutControlItem1.Name = "layoutControlItem1"
             Me.layoutControlItem1.Size = New Size(164, 26)
-            Me.layoutControlItem1.Text = "Key Word:"
-            Me.layoutControlItem1.TextSize = New Size(60, 16)
+            Me.layoutControlItem1.Text = "Keyword:"
+            Me.layoutControlItem1.TextSize = New Size(54, 16)
             ' 
             ' layoutControlItem2
             ' 
