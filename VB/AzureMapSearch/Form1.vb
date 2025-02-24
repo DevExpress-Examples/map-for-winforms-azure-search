@@ -1,6 +1,7 @@
 Imports DevExpress.XtraMap
 Imports DevExpress.XtraPrinting.Native
 Imports System.Text
+Imports System.Windows.Forms
 
 Namespace AzureMapSearch
 
@@ -17,8 +18,8 @@ Namespace AzureMapSearch
             Me.imageLayer2.DataProvider = New DevExpress.XtraMap.AzureMapDataProvider() With {.AzureKey = AzureMapSearch.Form1.azureKey, .Tileset = DevExpress.XtraMap.AzureTileset.BaseLabelsRoad}
             Me.azureSearchProvider = New DevExpress.XtraMap.AzureSearchDataProvider() With {.AzureKey = AzureMapSearch.Form1.azureKey}
             Me.informationLayer1.DataProvider = Me.azureSearchProvider
-            Me.informationLayer1.DataRequestCompleted += AddressOf OnDataRequestCompleted
-            Me.azureSearchProvider.SearchCompleted += New DevExpress.XtraMap.AzureSearchCompletedEventHandler(AddressOf OnSearchCompleted)
+            AddHandler Me.informationLayer1.DataRequestCompleted, AddressOf OnDataRequestCompleted
+            AddHandler Me.azureSearchProvider.SearchCompleted, New DevExpress.XtraMap.AzureSearchCompletedEventHandler(AddressOf OnSearchCompleted)
             Me.mapControl1.SearchPanelOptions.Visible = False
         End Sub
 
@@ -28,7 +29,7 @@ Namespace AzureMapSearch
 
         Private Sub OnSearchCompleted(ByVal sender As Object, ByVal e As DevExpress.XtraMap.AzureSearchCompletedEventArgs)
             If e.Cancelled Then Return
-            If e.RequestResult.ResultCode IsNot DevExpress.XtraMap.RequestResultCode.Success Then
+            If e.RequestResult.ResultCode <> DevExpress.XtraMap.RequestResultCode.Success Then
                 Me.memoEdit1.Text = "The Bing Search service does not work for this location."
                 Return
             End If
