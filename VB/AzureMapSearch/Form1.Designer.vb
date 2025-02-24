@@ -1,5 +1,3 @@
-Imports System.Drawing
-
 Namespace AzureMapSearch
 
     Partial Class Form1
@@ -95,13 +93,13 @@ Namespace AzureMapSearch
             Me.simpleButton1.StyleController = Me.layoutControl1
             Me.simpleButton1.TabIndex = 5
             Me.simpleButton1.Text = "Search for Location"
-            AddHandler Me.simpleButton1.Click, AddressOf simpleButton1_Click
+            Me.simpleButton1.Click += AddressOf simpleButton1_Click
             ' 
             ' textEdit1
             ' 
-            Me.textEdit1.Location = New Point(84, 12)
+            Me.textEdit1.Location = New Point(78, 12)
             Me.textEdit1.Name = "textEdit1"
-            Me.textEdit1.Size = New Size(88, 22)
+            Me.textEdit1.Size = New Size(94, 22)
             Me.textEdit1.StyleController = Me.layoutControl1
             Me.textEdit1.TabIndex = 4
             ' 
@@ -120,8 +118,8 @@ Namespace AzureMapSearch
             Me.layoutControlItem1.Location = New Point(0, 0)
             Me.layoutControlItem1.Name = "layoutControlItem1"
             Me.layoutControlItem1.Size = New Size(164, 26)
-            Me.layoutControlItem1.Text = "Key Word:"
-            Me.layoutControlItem1.TextSize = New Size(60, 16)
+            Me.layoutControlItem1.Text = "Keyword:"
+            Me.layoutControlItem1.TextSize = New Size(54, 16)
             ' 
             ' layoutControlItem2
             ' 
@@ -143,7 +141,7 @@ Namespace AzureMapSearch
             ' 
             ' Form1
             ' 
-            AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+            AutoScaleDimensions = New SizeF(8F, 20F)
             AutoScaleMode = AutoScaleMode.Font
             ClientSize = New Size(800, 450)
             Controls.Add(Me.layoutControl1)
