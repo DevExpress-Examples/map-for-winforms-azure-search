@@ -30,7 +30,7 @@ namespace AzureMapSearch {
         void OnSearchCompleted(object sender, AzureSearchCompletedEventArgs e) {
             if (e.Cancelled) return;
             if (e.RequestResult.ResultCode != RequestResultCode.Success) {
-                memoEdit1.Text = "The Bing Search service does not work for this location.";
+                memoEdit1.Text = "The Azure Search service does not work for this location.";
                 return;
             }
             StringBuilder resultList = new StringBuilder("");
