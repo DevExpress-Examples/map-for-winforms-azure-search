@@ -30,7 +30,7 @@ Namespace AzureMapSearch
         Private Sub OnSearchCompleted(ByVal sender As Object, ByVal e As DevExpress.XtraMap.AzureSearchCompletedEventArgs)
             If e.Cancelled Then Return
             If e.RequestResult.ResultCode <> DevExpress.XtraMap.RequestResultCode.Success Then
-                Me.memoEdit1.Text = "The Bing Search service does not work for this location."
+                Me.memoEdit1.Text = "The Azure Search service does not work for this location."
                 Return
             End If
 
