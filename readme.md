@@ -25,7 +25,7 @@ Output:
 
 ## Documentation
 
-* [Search](https://docs.devexpress.com/WindowsForms/16711/controls-and-libraries/map-control/gis-data/search?v=24.2)
+* [Search](https://docs.devexpress.com/WindowsForms/16711/controls-and-libraries/map-control/gis-data/search)
 
 ## More Examples 
 
@@ -38,3 +38,4 @@ Output:
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
