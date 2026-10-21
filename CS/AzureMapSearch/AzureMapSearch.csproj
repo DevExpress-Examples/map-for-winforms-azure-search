@@ -2,15 +2,15 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DevExpress.Win.Design" Version="24.2.2-beta-24326" />
-    <PackageReference Include="DevExpress.Win.Map" Version="24.2.2-beta-24326" />
+    <PackageReference Include="DevExpress.Win.Design" Version="26.1.5" />
+    <PackageReference Include="DevExpress.Win.Map" Version="26.1.5" />
   </ItemGroup>
 
 </Project>
